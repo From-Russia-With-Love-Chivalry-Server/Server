@@ -1,74 +1,71 @@
-<!DOCTYPE Transitional DTD>
+<!DOCTYPE Transitional DTD> 			/* Хрень собачья*/
 <html>
  <head>
   <meta charset="utf-8">
   <title>Мой первый сайт</title>
   <style type="text/css">
-   .CenterAlign {
-    text-align: center; /* Выравнивание по центру */ 
-   }
-	TABLE {
-		border: 0px solid white;
-		border-spacing: 0px;
+	TABLE {					/* Общий стиль для таблиц */
+		border: 0px solid white;	/* Параметры границ в таблицах */
+		border-spacing: 0px;		/* Расстояние между границами ячеек в таблице. */
 	}
 	
-	TD, TH {
-		padding: 0px;
-		border: 0px solid white;
+	TD, TH {				/* Стиль для ячеек */
+		padding: 0px;	/* Устанавливает значение полей вокруг содержимого элемента */
+		border: 0px solid white; /* См. выше */
 		}
 	
-	body {
-		margin: 0;
+	body {					/* Тело */
+		margin: 0;	/* Устанавливает величину отступа от каждого края элемента */
 	}
  	
-	h1.logo {
-		font-family: Arial Black;
-		color: #FFFFFF;
+	h1.logo {				/* Стиль для заголовка первого уровня, конкретно этот - для заголовка на логотипе */
+		font-family: Arial Black;	/* Шрифт */
+		color: #FFFFFF; 	/* Цвет */
 	}
 
-	h1 {
+	h1 {					/* Общий стиль для заголовка первого уровня */
 		font-family: Arial;
 		color: #0000FF;
 	}
 
-	a {	
+	a {					/* Стиль для ссылок*/
 		font-family: Arial;
-		font-size: 10pt;
+		font-size: 10pt;	/*Размер шрифта*/
 		color: #0000FF;
 	}
 
-	a:hover {
+	a:hover {				/* Стиль применяемый к ссылкам при их выделении */
 		font-family: Arial;
 		font-size: 10pt;
 		color: #FF0000;
 		text-decoration: none;
 	}
 
-	p {
+	p {					/* Стиль для тега, определяющего абзац */
 		font-family: Arial;
 		font-size: 10pt;
-		line-height: 150%;
+		line-height: 150%; *. /*Устанавливает межстрочный интервал текста*/
 	}
 
-	u1 {
+	ul{					/* Стиль для маркированного списка */
 		font-family: Arial;
 		font-size: 10pt;
 	}
 	
-	td.menu {
-		border-bottom-style: solid;
-		border-bottom-width: 1px;
-		border-bottom-color: #ffffff;
-		padding-left: 20px;
+	td.menu {				/* Стиль для ячеек, использующихся в меню */
+		border-bottom-style: solid;	/* Устанавливает стиль границы внизу элемента. */
+		border-bottom-width: 1px;	/* Устанавливает толщину границы внизу элемента. */
+		border-bottom-color: #ffffff;	/* Цвет */
+		padding-left: 20px; 		/*Отступ слева*/
 	}
 	
-	a.menu {
+	a.menu {				/* Стиль для ссылок в меню */
 		font: bold 10pt Arial;
-		text-decoration: none;
+		text-decoration: none;		/* Убираем подчеркивание ссылок */
 		color: #FFFFFF;
 	}
 	
-	a:hover.menu {
+	a:hover.menu {				/* Стиль для ссылок в меня при выделении */
 		font: bold 10pt Arial;
 		text-decoration: none;
 		color: #FF0000;
@@ -79,21 +76,21 @@
  <body>
 
 
-<table width=100%>
+<table width=100%> <!-- Ширина таблицы - 100% -->
 
-<tr>
-	<td class="menu" bgcolor="#005500">
-		<h1 class="logo">Мой первый сайт</h1>
+<tr>	<!-- ПЕРВАЯ СТРОКА (Header - Заголовок) -->
+	<td class="menu" bgcolor="#005500"> <!-- Ячейка с классом menu и с указанным фоновым цветом -->
+		<h1 class="logo">Мой первый сайт</h1> <!-- Заголовок первого уровня -->
 	</td>
 </tr>
 
-<tr>   
+<tr>   <!-- ВТОРАЯ СТРОКА -->
 	<td><table>
 		<tr>
-		<td valign="top" width="200px" bgcolor="#0000FF" style="padding: 0px;"> 
+		<td valign="top" width="200px" bgcolor="#0000FF" style="padding: 0px;"> <!-- Ячейка с выравниваемнием содержиого по вертикали - ввеох, фиксированной шириной в 200px, указанным цветом, и отступами в 0 px.-->
 			
-				<table border="0" width="100%" cellspacing = "0" cellpadding = "6"> 								
-					<tr><td class="menu"><a href="index.html" class="menu">Главная</a></td></tr> 
+				<table border="0" width="100%" cellspacing = "0" cellpadding = "6"> 		<!-- Таблица с нулевой толщиной рамки, нулевым расстоянием между ячеек, и с отступом от рамки до содержимого ячейки равным 6. -->				
+					<tr><td class="menu"><a href="index.html" class="menu">Главная</a></td></tr>  <!-- Пункты меню -->
 					<tr><td class="menu"><a href="aboutsite.html" class="menu">О ресурсе</a></td></tr> 
 					<tr><td class="menu"><a href="interests.html" class="menu">Мои увлечения</a></td></tr> 
 					<tr><td class="menu"><a href="aboutme.html" class="menu">Обо мне</a></td></tr> 
@@ -118,7 +115,7 @@ TEST	TEST	TEST	TEST	TESTTEST	TEST	TEST	TEST	TESTTEST	TEST	TEST	TEST	TESTTEST	TES
 	</table></td>
 </tr>
 
-<tr bgcolor="#000000">
+<tr bgcolor="#000000">		<!-- ТРЕТЬЯ СТРОКА (FOOTER) -->
 	<td align="center" >
 	<h1 style="font: Arial; font-size: 10pt; color: white; margin: 10px;">Мой первый Web-узел</h1>
 	</td> 
